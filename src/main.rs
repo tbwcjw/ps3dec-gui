@@ -112,7 +112,7 @@ impl eframe::App for PS3DecGUI {
             ui.label(&self.status);
             
             //ps3dec stdout stderr 
-            egui::ScrollArea::vertical().max_height(300.0).show(ui, |ui| {
+            egui::ScrollArea::vertical().max_height(212.0).show(ui, |ui| {
                 ui.add(
                     egui::TextEdit::multiline(&mut self.output)
                         .font(egui::TextStyle::Monospace)
@@ -158,7 +158,9 @@ impl eframe::App for PS3DecGUI {
 
 
         });
-
+        
+        self.output.push_str(&"f");
+        self.output.push('\n');
         //catch exit code from ps3dec
         if let Some(rx) = &self.rx {
             while let Ok(line) = rx.try_recv() {
