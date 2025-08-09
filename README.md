@@ -9,7 +9,7 @@
 </p>
 <hr>
 <p align="center">
-<img src="assets/screenshot.png" width="50%">
+<img src="assets/completed_screenshot.png" width="50%">
 <h3>Building</h3>
 <p>Cross compilation to windows requires <code>mingw-w64</code>. Included is a bash script <code>release.sh</code> to automate compilation and creation of zip files containing the binaries for Windows 64/32bit and Linux 64/32bit. In future I would like to target ARM and Macintosh if possible, any help would be appreciated.</p>
 <h3>TODO</h3>
