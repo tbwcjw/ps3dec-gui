@@ -159,8 +159,6 @@ impl eframe::App for PS3DecGUI {
 
         });
         
-        self.output.push_str(&"f");
-        self.output.push('\n');
         //catch exit code from ps3dec
         if let Some(rx) = &self.rx {
             while let Ok(line) = rx.try_recv() {
